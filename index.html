@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">    
+    <title>Interacción dinámica </title>
+</head>
+<body>
+    <div class="principal">
+    <header class="h4">
+        <h3>Online Border Radious Generator</h3>
+    </header>
+    <main class="main">
+        
+        <div class="container-border">
+           
+            <div class="tb-iz">
+            <div class="border-div">                 
+                <input id="r-t-iz" value="0" min="0" type="number">
+                <input type="range" id="vol" class="slider" name="vol" min="0" max="50">                
+              
+                <div>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> All the same </label>
+                </div>
+            </div>
+            </div>
+            <div class="separete"></div>
+            
+            <div class="tb-der">
+            <div class="border-div">
+                <input id="r-t-iz" value="0" min="0" type="number">
+                <input type="range" class="slider" id="vol" name="vol" min="0" max="50">                
+            </div>
+            </div>
+        </div>
+        <div class="container-center">
+            <div class="radious">
+            <textarea id="w3review" name="w3review" rows="4" cols="25"> </textarea>
+            </div>
+        </div>
+     
+        <div class="container-border">
+            
+            <div class="db-iz">
+            <div class="border-div"> 
+                <input id="r-t-iz" value="0" min="0" type="number">
+                <input type="range" class="slider" id="vol" name="vol" min="0" max="50">               
+            </div>
+            </div>
+            <div class="separete"></div>
+         
+            <div class="db-der">
+            <div class="border-div">
+                <input id="r-t-iz" value="0" min="0" type="number">
+                <input type="range" class="slider" id="vol" name="vol" min="0" max="50">
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="settingRow">
+            <div class="settingRow">
+                <div class="settingRowLabel">
+                    Width: <span class="resetToThis" data-callfunction="refreshBorder" data-slider="borderWidth">1</span>
+                </div>
+                <div class="settingRowInput" style="max-width: 300px;float: left;">
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="settingRow">
+            <div class="settingRow">
+                <div class="settingRowLabel">
+                    Style:
+                </div>
+                <div class="settingRowInput">
+                    <div id="borderStyle">
+                        <div id="borderStyles">
+                            <a style="border-style: solid;" title="solid" class="selected">solid</a>
+                            <a style="border-style: dotted;" title="dotted">dotted</a>
+                            <a style="border-style: dashed;" title="dashed">dashed</a>
+                            <a style="border-style: double;" title="double">double</a>
+                            <a style="border-style: groove;" title="groove">groove</a>
+                            <a style="border-style: ridge;" title="ridge">ridge</a>
+                            <a style="border-style: inset;" title="inset">inset</a>
+                            <a style="border-style: outset;" title="outset">outset</a>
+                            <a style="border-style: hidden;" title="hidden">hidden</a>
+                            <a style="border-style: none;" title="none">none</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="settingRow">
+            <div class="settingRowLabel">
+                Color:
+            </div>
+            <div class="settingRowInput">
+                <input class="jscolor jscolor-active" id="borderColor" style="border-radius: 4px; background: #1C6EA4;" value="1C6EA4"/>
+                <div class="wrapBorderOpacity">
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider2" id="myRange">
+                      </div>
+                </div>
+                <span class="resetToThis" data-callfunction="refreshBorder" data-slider="borderColorOpacity">1</span>
+            </div>
+        </div>
+        <div class="settingRow clearfix">
+            <div class="settingRowLabel">
+                Position:
+            </div>
+            <div class="settingRowInput">
+                <div id="whichBorder">
+                    <a class="selected" title="border" style="border: 4px solid #1C6EA4;">All</a>
+                    <a title="border-top" style="border-top: 4px solid #1C6EA4;">Top</a>
+                    <a title="border-right" style="border-right: 4px solid #1C6EA4;">Right</a>
+                    <a title="border-bottom" style="border-bottom: 4px solid #1C6EA4;">Bottom</a>
+                    <a title="border-left" style="border-left: 4px solid #1C6EA4;">Left</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>  
+    <script src="js/main.js"></script>
+</body>
+</html>
